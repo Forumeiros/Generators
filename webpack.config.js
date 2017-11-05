@@ -7,7 +7,7 @@ module.exports = {
   entry: './app/index.js',
 
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, 'docs'),
     compress: true,
     port: 9000
   },
@@ -25,13 +25,13 @@ module.exports = {
     }, {
       test: /\.scss$/,
       use: [{
-        loader: "style-loader"
+        loader: 'style-loader'
       }, {
-        loader: "css-loader"
+        loader: 'css-loader'
       }, {
-        loader: "sass-loader",
+        loader: 'sass-loader',
         options: {
-          outputStyle: "compressed"
+          outputStyle: 'compressed'
         }
       }, {
         loader: 'postcss-loader',
@@ -54,6 +54,6 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'docs')
   }
 };

@@ -6,7 +6,8 @@ export default class Navbar extends React.Component {
   render () {
     let links = [{
       name: 'Voltar ao Fórum',
-      href: 'http://ajuda.forumeiros.com/'
+      href: 'http://ajuda.forumeiros.com/',
+      icon: 'fa fa-angle-left'
     }];
 
     links = links.map((item, index) => {
@@ -14,6 +15,7 @@ export default class Navbar extends React.Component {
         <NavbarItem
           key={index}
           name={item.name}
+          icon={item.icon}
           href={item.href}
         />
       );
