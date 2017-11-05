@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navbar from './Navbar.js';
 
-import './header.scss';
+import './header-styles.scss';
 
 export default class Header extends React.Component {
   render () {
