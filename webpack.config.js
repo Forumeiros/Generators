@@ -1,6 +1,7 @@
-const production = false;
+const production = true;
 
 const webpack = require('webpack');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -47,9 +48,7 @@ module.exports = {
   },
 
   plugins: production ? [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new UglifyJSPlugin()
   ] : [],
 
   output: {
