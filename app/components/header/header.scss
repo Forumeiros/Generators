@@ -1,0 +1,23 @@
+.navbar-wrapper {
+  display: block;
+  background-color: #39c;
+
+  & > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    & > li {
+      & > a {
+        display: inline-block;
+        color: #fff;
+        padding: 17px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+      }
+    }
+  }
+}
